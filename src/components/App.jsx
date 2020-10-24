@@ -1,6 +1,8 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 
+import './App.css'
+
 import Item from './Item'
 
 function App() {
@@ -9,7 +11,7 @@ function App() {
     useEffect(() => {
         const temp = []
 
-        for (let i = 0; i <= 10; i ++) {
+        for (let i = 0; i <= 30; i ++) {
             temp.push(i)
         }
 
@@ -17,7 +19,7 @@ function App() {
     }, [])
 
     return (
-        <div>
+        <div className="container">
             { array.map((item, key) => {
                 return <Item value={ item } key={ key }/>
             }) }

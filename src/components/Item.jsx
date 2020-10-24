@@ -1,8 +1,10 @@
 import React from 'react'
 
+import './Item.css'
+
 const Item = ({ value }) => {
     return (
-        <div>
+        <div className="card"> 
             <p>{ value }</p>
         </div>
     )
